@@ -100,6 +100,7 @@ fi
 echo "$(git show-ref --heads)"
 
 COMMAND="hub pull-request \
+  --push \
   -b $DESTINATION_BRANCH \
   -h "$SOURCE_BRANCH" \
   --no-edit \
