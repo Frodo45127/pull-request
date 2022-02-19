@@ -97,7 +97,7 @@ fi
 if [[ "$INPUT_PR_DRAFT" ==  "true" ]]; then
   PR_ARG="$PR_ARG -d"
 fi
-echo "$(git show-ref --heads)"
+echo "$(git status)"
 
 COMMAND="hub pull-request \
   -b $DESTINATION_BRANCH \
