@@ -101,7 +101,7 @@ echo "$(git push origin "$SOURCE_BRANCH")"
 
 COMMAND="hub pull-request \
   -b $DESTINATION_BRANCH \
-  -h "$SOURCE_BRANCH" \
+  -h "RustedLittlePet:$SOURCE_BRANCH" \
   --no-edit \
   -f \
   $PR_ARG \
