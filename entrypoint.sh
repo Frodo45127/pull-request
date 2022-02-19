@@ -101,9 +101,9 @@ echo "$(git show-ref --heads)"
 
 COMMAND="hub pull-request \
   -b $DESTINATION_BRANCH \
-  -h $SOURCE_BRANCH \
+  -h "$SOURCE_BRANCH" \
   --no-edit \
-  -f
+  -f \
   $PR_ARG \
   || true"
 
